@@ -1,0 +1,2 @@
+# CharacterCounterExtension
+Character count Addon
