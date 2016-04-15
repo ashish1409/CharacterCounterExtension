@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Character counter",
+  "description": "Character counting",
+  "version": "1.0",
+  "content_security_policy": "default-src 'self';  script-src 'unsafe-eval'",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}

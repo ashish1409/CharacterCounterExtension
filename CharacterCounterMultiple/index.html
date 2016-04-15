@@ -1,0 +1,50 @@
+                    
+<!DOCTYPE html>
+<html ng-app="counter">
+  <head>
+    <meta charset="utf-8" />
+    <title>Character count</title>
+	<link rel="stylesheet" href="bootstrap.min.css" />
+	<link rel="stylesheet" href="font/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.0.x" src="angular.js" data-semver="1.0.7"></script>
+	<script src="app.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+<div class="container">
+	<div class="row">
+		<h3>Character count</h3>
+	</div>
+    <div class="row">
+		<div class="col-md-6">
+			<div class="widget-area no-padding blank">
+				<div class="status-upload">
+					<form>
+						<div class="row">
+						  <input type="text" ng-model="inputVal1" placeholder="First Name">
+						  <div class="count">count:{{inputVal1.length}}</div></li>
+						</div>
+						<div class="row">
+						  <input type="text" ng-model="inputVal2" placeholder="Last Name">
+						  <div class="count">count:{{inputVal2.length}}</div></li>
+						</div>
+						<div class="row">
+						  <textarea ng-model="textAreaCount" placeholder="What are you doing right now?" data-character-count ></textarea>
+						  <div class="count">count:{{textAreaCount.length}}</div>
+						</div>
+						<ul>
+							<li><a href="https://www.facebook.com/ashish.choudhary84" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://in.linkedin.com/in/ashish-choudhary-64353917" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+							<li><a href="https://plus.google.com/u/0/104603966249340147219/posts" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Google plus"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="https://twitter.com/TestAshish" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						</ul>
+						<button type="submit" class="btn btn-success green"><i class="fa fa-paper-plane"></i> Submit</button>
+					</form>
+				</div><!-- Status Upload  -->
+			</div><!-- Widget Area -->
+		</div>  
+    </div>
+</div>
+  </body>
+
+</html>
